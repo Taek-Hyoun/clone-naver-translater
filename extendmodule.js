@@ -13,7 +13,7 @@ function proms(options){
         });
     })
 }
-exchange = (target) => { //화살표 함수를 요즘 써먹고 있는데 확실히 단어들이 별로없고 간편해서 쓰고있다.
+exchange = (target) => {
     switch (target){
         case 'Korea':
             return 'ko';
