@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+html 
+    head
+        script(src="https://kit.fontawesome.com/1c9b8c0219.js" crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@300&family=Ubuntu&display=swap" rel="stylesheet")
+        link(rel='stylesheet' href='css/indexc.css')
+        title papago
+    body
+        div(class='gnb-container')
+            div(class='gnb-inner-container') <!-- padding : 0px 32px-->
+                h2 translate 
+                h3 translater
+        div(class='translate-textarea-container')
+            div(class='translate-textarea inner1')
+                div(class='select-lang')
+                    div(class='cursor-box left')
+                        if source == undefined
+                            h3(class='h3 left' style='display:inline-block') Select Language
+                        else
+                            h3(class='h3 left' style='display:inline-block')= source
+                        a(href="")
+                            i(class="fa fa-chevron-down")
+                div(class='dropdown-container left' aria-haspopup='true')
+                    div(class='dropdown-container-inner')
+                        ul(class='dropul')
+                            li(class='dropli')
+                                span(class='dropspan left') Korea 
+                            li(class='dropli')
+                                span(class='dropspan left') English
+                            li(class='dropli')
+                                span(class='dropspan left') Japanese
+                        ul(class='dropul')
+                            li(class='dropli')
+                                span(class='dropspan left') Chinese
+                            li(class='dropli')
+                                span(class='dropspan left') Spanish 
+                            li(class='dropli')
+                                span(class='dropspan left') French 
+                        ul(class='dropul')
+                            li(class='dropli')
+                                span(class='dropspan left') German
+                            li(class='dropli')
+                                span(class='dropspan left') Russian
+                            li(class='dropli')
+                                span(class='dropspan left') Portuguese
+                        ul(class='dropul')
+                            li(class='dropli')
+                                span(class='dropspan left') Italian
+                            li(class='dropli')
+                                span(class='dropspan left') Vietnamese
+                            li(class='dropli')
+                                span(class='dropspan left') Thai
+                        ul(class='dropul')
+                            li(class='dropli')
+                                span(class='dropspan left') Indonesian 
+                            li(class='dropli')
+                                span(class='dropspan left') Hindi
+                div(class='dropdown-size-standard')
+                    textarea(class='textArea-left' name='text' placeholder='Type the Text to translate.' onClick='func')= textareaText
+                    div(class='func-list')
+                        span(class="tooltip listen")
+                            i(class="fa-solid fa-volume-high icon")
+                            div(class='hover-tip') Listen
+                        span(class='tooltip copy left')
+                            i(class='fa-regular fa-copy icon')
+                            div(class='hover-tip') Copy
+                        button(class='btn-tooltip-translate' onClick='func()')
+                            span(class='tooltip-translate') Translate
+            div(class='translate-textarea inner2')
+                div(class='select-lang')
+                    div(class='cursor-box right')
+                        if target == undefined
+                            h3(class='h3 right' style='display:inline-block') Select Language
+                        else
+                            h3(class='h3 right' style='display:inline-block')= target
+                        a(href="")
+                            i(class="fa fa-chevron-down")
+                div(class='dropdown-container right')
+                    div(class='dropdown-container-inner')
+                        ul(class='dropul')
+                            li(class='dropli')
+                                span(class='dropspan right') Korea 
+                            li(class='dropli')
+                                span(class='dropspan right') English
+                            li(class='dropli')
+                                span(class='dropspan right') Japanese
+                        ul(class='dropul')
+                            li(class='dropli')
+                                span(class='dropspan right') Chinese
+                            li(class='dropli')
+                                span(class='dropspan right') Spanish 
+                            li(class='dropli')
+                                span(class='dropspan right') French 
+                        ul(class='dropul')
+                            li(class='dropli')
+                                span(class='dropspan right') German
+                            li(class='dropli')
+                                span(class='dropspan right') Russian
+                            li(class='dropli')
+                                span(class='dropspan right') Portuguese
+                        ul(class='dropul')
+                            li(class='dropli')
+                                span(class='dropspan right') Italian
+                            li(class='dropli')
+                                span(class='dropspan right') Vietnamese
+                            li(class='dropli')
+                                span(class='dropspan right') Thai
+                        ul(class='dropul')
+                            li(class='dropli')
+                                span(class='dropspan right') Indonesian 
+                            li(class='dropli')
+                                span(class='dropspan right') Hindi
+                div(class='dropdown-size-standard')
+                    textarea(class="textArea-right" disabled style="background-color=white;")= translatedText
+                    div(class='func-list')
+                        span(class="tooltip listen")
+                            i(class="fa-solid fa-volume-high icon")
+                            div(class='hover-tip') Listen
+                        span(class='tooltip copy right')
+                            i(class='fa-regular fa-copy icon')
+                            div(class='hover-tip') Copy
+                        span(class='tooltip favorite')
+                            i(class='fa-regular fa-star icon')
+                            div(class='hover-tip') Favorites
+                        span(class='tooltip share')
+                            i(class='fa-regular fa-share-from-square icon')
+                            div(class='hover-tip') Copy&nbspURL
+    script(src='js/index.js')
